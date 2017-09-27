@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium POM example]">
+  <parameter name="appURL" value="https://www.google.co.in/"/>
+  <parameter name="browserType" value="chrome"/>
+  <test name="sample test(failed)">
+    <classes>
+      <class name="com.pack.tests.BasePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.pack.tests.BasePageTest -->
+      <class name="com.pack.tests.CreateAnAccountPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyCreateAnAccounPage"/>
+          <include name="tearDown"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.pack.tests.CreateAnAccountPageTest -->
+      <class name="com.pack.tests.SignInPageTest">
+        <methods>
+          <include name="verifySignInFunction"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.pack.tests.SignInPageTest -->
+    </classes>
+  </test> <!-- sample test(failed) -->
+</suite> <!-- Failed suite [Selenium POM example] -->

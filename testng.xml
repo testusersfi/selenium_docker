@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium POM example">
+<parameter name="appURL" value="https://www.google.co.in/"/>
+<parameter name="browserType" value="chrome"/>
+  <test name="sample test">
+    <classes>
+    <class name="com.pack.tests.BasePageTest"/>
+      <class name="com.pack.tests.SignInPageTest"/>
+      <class name="com.pack.tests.CreateAnAccountPageTest"/>
+    </classes>
+  </test>
+</suite>
