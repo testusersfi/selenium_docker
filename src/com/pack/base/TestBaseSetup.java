@@ -12,7 +12,7 @@ import org.testng.annotations.Parameters;
 public class TestBaseSetup {
 
 	private WebDriver driver;
-	static String driverPath = "./driver/windows/";
+	static String driverPath = "./driver/linux/";
 
 	public WebDriver getDriver() {
 		return driver;
