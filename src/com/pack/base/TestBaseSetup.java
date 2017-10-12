@@ -16,7 +16,7 @@ import org.testng.annotations.Parameters;
 public class TestBaseSetup {
 
 	private RemoteWebDriver driver;
-	static String driverPath = "./driver/linux/";
+	//static String driverPath = "./driver/linux/";
 
 	public WebDriver getDriver() {
 		return driver;
@@ -38,7 +38,7 @@ public class TestBaseSetup {
 
 	private static RemoteWebDriver initChromeDriver(String appURL) throws MalformedURLException {
 		System.out.println("Launching google chrome with new profile..");
-		System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
 		RemoteWebDriver driver = new RemoteWebDriver(
                 new URL("http://localhost:4444/wd/hub"),
