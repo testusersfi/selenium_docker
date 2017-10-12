@@ -43,6 +43,7 @@ public class TestBaseSetup {
 		RemoteWebDriver driver = new RemoteWebDriver(
                 new URL("http://localhost:4444/wd/hub"),
                 DesiredCapabilities.chrome());
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.navigate().to(appURL);
 		return driver;
@@ -54,7 +55,7 @@ public class TestBaseSetup {
 		RemoteWebDriver driver = new RemoteWebDriver(
                 new URL("http://localhost:4444/wd/hub"),
                 DesiredCapabilities.firefox());
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.navigate().to(appURL);
 		return driver;
