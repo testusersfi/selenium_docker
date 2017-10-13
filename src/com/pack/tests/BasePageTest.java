@@ -1,6 +1,7 @@
 package com.pack.tests;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ import com.pack.pageobjects.BasePage;
 
 public class BasePageTest extends TestBaseSetup {
 
-	private WebDriver driver;
+	private RemoteWebDriver driver;
 
 	@BeforeClass
 	public void setUp() {

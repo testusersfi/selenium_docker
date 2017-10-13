@@ -19,7 +19,7 @@ public class TestBaseSetup {
 	private RemoteWebDriver driver;
 	//static String driverPath = "./driver/linux/";
 
-	public WebDriver getDriver() {
+	public RemoteWebDriver getDriver() {
 		return driver;
 	}
 
