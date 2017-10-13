@@ -2,9 +2,10 @@ package com.pack.pageobjects;
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 	public class SignInPage {
 
-	private WebDriver driver;
+	private RemoteWebDriver driver;
 
 	private By headerPageText = By.cssSelector(".hidden-small");
 	private By createAccountLink = By.id("link-signup");
@@ -13,7 +14,7 @@ package com.pack.pageobjects;
 	private By loginBtn = By.id("signIn");
 	private By errorMsgTxt = By.id("errormsg_0_Passwd");
 		
-		public SignInPage(WebDriver driver) {
+		public SignInPage(RemoteWebDriver driver) {
 			this.driver=driver;
 		}
 		

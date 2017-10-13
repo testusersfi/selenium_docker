@@ -2,12 +2,13 @@ package com.pack.pageobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class CreateAccountPage {
 
-	private WebDriver driver;
+	private RemoteWebDriver driver;
 	private By headerPageTxt = By.cssSelector(".signuponepage.main.content.clearfix>h1");
-	public CreateAccountPage(WebDriver driver) {
+	public CreateAccountPage(RemoteWebDriver driver) {
 		this.driver=driver;
 	}
 	

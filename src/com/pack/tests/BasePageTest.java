@@ -15,7 +15,9 @@ public class BasePageTest extends TestBaseSetup {
 
 	@BeforeClass
 	public void setUp() {
+		System.out.println("Entered before class");
 		driver = getDriver();
+		System.out.println("driver initialization is complete ");
 	}
 
 	@Test

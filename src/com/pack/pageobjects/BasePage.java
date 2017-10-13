@@ -3,12 +3,13 @@ package com.pack.pageobjects;
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 	public class BasePage {
-		protected WebDriver driver;
+		protected RemoteWebDriver driver;
 		private By signInButton = By.linkText("Sign in");
 		
-		public BasePage(WebDriver driver) {
+		public BasePage(RemoteWebDriver driver) {
 			this.driver = driver;
 		}
 		
