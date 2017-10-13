@@ -40,9 +40,10 @@ public class TestBaseSetup {
 		System.out.println("Launching google chrome with new profile..");
 		//System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
 		//WebDriver driver = new ChromeDriver();
+		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		cap.setPlatform(Platform.ANY);
 		RemoteWebDriver driver = new RemoteWebDriver(
-                new URL("http://localhost:4444/wd/hub"),
-                DesiredCapabilities.chrome());
+                new URL("http://localhost:4444/wd/hub"), cap);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.navigate().to(appURL);
